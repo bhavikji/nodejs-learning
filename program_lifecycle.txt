@@ -1,8 +1,0 @@
-1. Incoming Request are handled by single thread.
-2. This thread will start the Event Loop (it is automatically triggered by nodejs)
-3. Event Loop (It will handle event callback)
-4. Worker Pool (it is a pool where the heavy data are handled, like file input, internally Worker Pool can have multiple threads to handle heavy data, it is helpful to make sure that our request should not get blocked)
-
-Once the Worker Pool job is done it will trigger a callback the Event Loop 
-
-By default, Nodejs have function which have scope to itself.
